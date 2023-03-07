@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="myBtn">Сотрудничество</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+
+            <div class="voprosi">
+                <div class="left">
+                    <h1>Sign up</h1>
+
+                </div>
+                <div class="right">
+                    <h2>New user?</h2>
+                    <h3>Use the form below to create your account.</h3>
+                    <div class="form">
+                        <form method="get" action="http://fe.it-academy.by/TestForm.php">
+                            <div class="form-left">
+                                <p>First Name</p>
+                                <input type="text" name="name" placeholder="Alice"><br>
+                                <p>Nationality</p>
+                                <input type="text" name="lastName" placeholder="American"><br>
+                                <p>Date of Birth</p>
+                                <select name="day" id="day">
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                    <option value="4">04</option>
+                                    <option value="5">05</option>
+                                    <option value="6">06</option>
+                                    <option value="7">07</option>
+                                    <option value="8">08</option>
+                                    <option value="9">09</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <select name="month" id="month">
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="9">November</option>
+                                    <option value="10">December</option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option value="1">2010</option>
+                                    <option value="2">2011</option>
+                                    <option value="3">2012</option>
+                                    <option value="4">2013</option>
+                                    <option value="5">2014</option>
+                                    <option value="6">2015</option>
+                                    <option value="7">2016</option>
+                                    <option value="8">2017</option>
+                                    <option value="9">2018</option>
+                                    <option value="10">2019</option>
+                                    <option value="9">2020</option>
+                                    <option value="10">2021</option>
+                                </select><br>
+                                <p>Password</p>
+                                <input type="text" name="lastName" placeholder="American"><br>
+                            </div>
+
+                            <div class="form-right">
+                                <p>Last Name</p>
+                                <input type="text" name="lastName" placeholder="Miller"><br>
+
+                                <p>E-mail</p>
+                                <input type="text" name="lastName" placeholder="alice.miller@yahoo.com"><br>
+
+                                <p>Gender</p>
+                                <div class="radio">
+                                    <input type="radio" name="answer" value="1">Male
+                                    <input type="radio" name="answer" value="2" checked>Female<br>
+                                </div>
+                                <p> Confirm Password
+                                    <input type="text" name="lastName" placeholder="American"><br>
+                            </div>
+                            <h3>Have an account? <a href="#">Login</a> </h3>
+                            <input type="submit" value="Найти!">
+                        </form>
+                    </div>
+
+
+                </div>
+                <!-- <span class="close">&times;</span>
+                <div class="voprosi-left">
+                    <h1>
+                        Менеджер позвонит<br />
+                        вам в течение 5 минут
+                    </h1>
+                    <p>
+                        ответит на все вопросы и проконсультирует<br />
+                        по продуктам Kugoo
+                    </p>
+
+                    <form method="get" action="http://fe.it-academy.by/TestForm.phpphp">
+                        <input type="text2" name="carmodel" value="+375 ()...." />
+                        <input type="submit2" value="Проконсультироваться" />
+                    </form>
+                    <input type="checkbox" name="onlynew" />Нажимая на кнопку, вы
+                    соглашаетесь на обработку<br />
+                    персональных данных и политикой конфиденциальности
+                </div>
+
+                <img src="kugoo_img/portrait3.png" alt="img" /> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- <div class="modal" id="myModal">
+        <div class="modalContent">
+
+            <div class="left"></div>
+            <div class="right"></div>
+
+        </div>
+    </div> -->
+</body>
+
+</html>
