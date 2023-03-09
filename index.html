@@ -16,99 +16,104 @@
 </head>
 
 <body>
-
     <button id="myBtn">Сотрудничество</button>
-
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <article>
-                <div class="section-left">
-                    <h1>Sign up</h1>
-                </div>
-                <div class="section-right">
-                    <h2>New user?</h2>
-                    <h3>Use the form below to create your account.</h3>
-                    <div class="form">
-                        <form method="get" action="http://fe.it-academy.by/TestForm.php">
-                            <div class="forms">
-                                <div class="form-left">
-                                    <p>First Name</p>
-                                    <input type="text" name="name" id="size" placeholder="Alice"><br>
-                                    <p>Nationality</p>
-                                    <input type="text" name="lastName" id="size" placeholder="American"><br>
-                                    <p>Date of Birth</p>
-                                    <select name="day" id="birth-day">
-                                        <option value="1">01</option>
-                                        <option value="2">02</option>
-                                        <option value="3">03</option>
-                                        <option value="4">04</option>
-                                        <option value="5">05</option>
-                                        <option value="6">06</option>
-                                        <option value="7">07</option>
-                                        <option value="8">08</option>
-                                        <option value="9">09</option>
-                                        <option value="10">10</option>
-                                    </select>
-                                    <select name="month" id="birth-month">
-                                        <option value="1">January</option>
-                                        <option value="2">February</option>
-                                        <option value="3">March</option>
-                                        <option value="4">April</option>
-                                        <option value="5">May</option>
-                                        <option value="6">June</option>
-                                        <option value="7">July</option>
-                                        <option value="8">August</option>
-                                        <option value="9">September</option>
-                                        <option value="10">October</option>
-                                        <option value="9">November</option>
-                                        <option value="10">December</option>
-                                    </select>
-                                    <select name="year" id="birth-year">
-                                        <option value="1">2010</option>
-                                        <option value="2">2011</option>
-                                        <option value="3">2012</option>
-                                        <option value="4">2013</option>
-                                        <option value="5">2014</option>
-                                        <option value="6">2015</option>
-                                        <option value="7">2016</option>
-                                        <option value="8">2017</option>
-                                        <option value="9">2018</option>
-                                        <option value="10">2019</option>
-                                        <option value="9">2020</option>
-                                        <option value="10">2021</option>
-                                    </select><br>
-                                    <p>Password</p>
-                                    <input type="text" name="lastName" id="size"><br>
-                                </div>
-                                <div class="form-right">
-                                    <p>Last Name</p>
-                                    <input type="text" name="lastName" id="size" placeholder="Miller"><br>
-
-                                    <p>E-mail</p>
-                                    <input type="text" name="email" id="size" placeholder="alice.miller@yahoo.com"><br>
-
-                                    <p>Gender</p>
-                                    <div>
-
-                                        <input type="radio" name="rb" id="rb1" checked> <label for="rb1">Male
-                                        </label>
-                                        <input type="radio" name="rb" id="rb2"> <label for="rb2">Female</label>
-                                    </div>
+    <div class="container">
 
 
 
-
-                                    <p> Confirm Password</p>
-                                    <input type="text" name="lastName" id="size"><br>
-                                </div>
-                            </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content" id="md">
+                <article>
+                    <div class="section-left">
+                        <h1>Sign up</h1>
                     </div>
-                    <footer>
-                        <h4>Have an account? <a href="#">Login</a> </h4>
-                        <input type="submit" class="submit" value="Complete Signup">
-                    </footer>
-                </div>
-            </article>
+                    <div class="section-right">
+                        <!-- <img src="img/Shape.png" alt="img"> -->
+                        <h2>New user?</h2>
+                        <h3>Use the form below to create your account.</h3>
+                        <div class="form">
+                            <form method="get" action="http://fe.it-academy.by/TestForm.php">
+                                <div class="forms">
+                                    <div class="form-left">
+                                        <p>First Name</p>
+                                        <input type="text" name="name" id="size" placeholder="Alice"><br>
+                                        <p>Nationality</p>
+                                        <input type="text" name="lastName" id="size" placeholder="American"><br>
+                                        <p>Date of Birth</p>
+                                        <select name="day" id="birth-day">
+                                            <option value="1">01</option>
+                                            <option value="2">02</option>
+                                            <option value="3">03</option>
+                                            <option value="4">04</option>
+                                            <option value="5">05</option>
+                                            <option value="6">06</option>
+                                            <option value="7">07</option>
+                                            <option value="8">08</option>
+                                            <option value="9">09</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <select name="month" id="birth-month">
+                                            <option value="1">January</option>
+                                            <option value="2">February</option>
+                                            <option value="3">March</option>
+                                            <option value="4">April</option>
+                                            <option value="5">May</option>
+                                            <option value="6">June</option>
+                                            <option value="7">July</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">October</option>
+                                            <option value="9">November</option>
+                                            <option value="10">December</option>
+                                        </select>
+                                        <select name="year" id="birth-year">
+                                            <option value="1">2010</option>
+                                            <option value="2">2011</option>
+                                            <option value="3">2012</option>
+                                            <option value="4">2013</option>
+                                            <option value="5">2014</option>
+                                            <option value="6">2015</option>
+                                            <option value="7">2016</option>
+                                            <option value="8">2017</option>
+                                            <option value="9">2018</option>
+                                            <option value="10">2019</option>
+                                            <option value="9">2020</option>
+                                            <option value="10">2021</option>
+                                        </select><br>
+                                        <p>Password</p>
+                                        <input type="text" name="lastName" id="size"><br>
+                                    </div>
+                                    <div class="form-right">
+                                        <p>Last Name</p>
+                                        <input type="text" name="lastName" id="size" placeholder="Miller"><br>
+
+                                        <p>E-mail</p>
+                                        <input type="text" name="email" id="size"
+                                            placeholder="alice.miller@yahoo.com"><br>
+
+                                        <p>Gender</p>
+                                        <div>
+
+                                            <input type="radio" name="rb" id="rb1" checked> <label for="rb1">Male
+                                            </label>
+                                            <input type="radio" name="rb" id="rb2"> <label for="rb2">Female</label>
+                                        </div>
+
+
+
+
+                                        <p> Confirm Password</p>
+                                        <input type="text" name="lastName" id="size"><br>
+                                    </div>
+                                </div>
+                        </div>
+                        <footer>
+                            <h4>Have an account? <a href="#">Login</a> </h4>
+                            <input type="submit" class="submit" value="Complete Signup" id="submit">
+                        </footer>
+                    </div>
+                </article>
+            </div>
         </div>
     </div>
 
@@ -117,6 +122,10 @@
         var btn = document.getElementById("myBtn");
         btn.onclick = function () {
             modal.style.display = "block";
+        }
+        var btn = document.getElementById("submit");
+        btn.onclick = function () {
+            modal.style.display = "none";
         }
     </script>
 </body>

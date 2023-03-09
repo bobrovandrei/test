@@ -6,6 +6,24 @@
 	font-family: "Work Sans", sans-serif;
 }
 
+.container {
+	width: 527.8px;
+	height: 480px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#myBtn {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	margin-top: 300px;
+	background-color: red;
+	color: #ffffff;
+	width: 300px;
+	height: 100px;
+}
+
 .modal {
 	display: none;
 	position: fixed;
@@ -94,6 +112,7 @@ p {
 	border: none;
 	border-bottom: 1px solid #f2f2f2;
 	width: 67.67px;
+	background: transparent;
 }
 
 #birth-month {
@@ -109,6 +128,9 @@ p {
 }
 
 .section-right {
+	background-image: url(img/Shape.png);
+	background-repeat: no-repeat;
+	background-position: bottom right;
 	padding-top: 38.52px;
 	padding-bottom: 32.48px;
 	padding-left: 20.8px;
@@ -132,6 +154,7 @@ p {
 	line-height: 16px;
 	color: #111111;
 	height: 27.2px;
+	background: transparent;
 }
 
 #radio {
@@ -140,16 +163,6 @@ p {
 
 span {
 	margin-left: 6px;
-}
-.close {
-	color: #5d6c7b;
-	position: absolute;
-	right: 16px;
-	top: 0;
-	font-size: 28px;
-	font-weight: bold;
-	cursor: pointer;
-	z-index: 1;
 }
 
 footer {
